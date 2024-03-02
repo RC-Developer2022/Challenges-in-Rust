@@ -4,15 +4,15 @@ pub fn fibonacci(num: i32) -> Result<Vec<i32>, &'static str> {
         return Err("Num needs to be a postive integer");
     }
 
-    let mut array: Vec<i32> = Vec::new();
+    let mut response: Vec<i32> = Vec::new();
 
     let mut prev: i32 = 0;
     let mut curr: i32 = 1;
 
     for _i in 0..num {
-         array.push(curr);
+        response.push(curr);
         curr = curr+ prev;
         prev = curr;
     }
-    return Ok(array);
+    return Ok(response);
 }
