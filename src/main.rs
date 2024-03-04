@@ -1,7 +1,14 @@
 mod desafios;
 
 fn main() {
-    result_fibonacci(5,0,-5)
+    match desafios::merge_string_alternately_leetcode_challengers::merge_alternately("ab","pqrs"){
+        Ok(res) => {
+            println!("{}",res)
+        }
+        Err(erro)=>{
+
+        }
+    }
 }
 
 fn result_fibonacci(num: i32, num1:i32, num2: i32) {
